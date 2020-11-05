@@ -120,6 +120,7 @@ function Create_Folder()
 {
     #=======================3.Copy To Server======================= 
 	IMAGE_FOLDER=$TVQC_ADB_PATH_TMP"/"$BUILD_NUMBER
+	rm -rf $IMAGE_FOLDER
     rm -rf $WORKSPACE/kernel/system/tmp/toolchain
     
     mkdir -p ${IMAGE_FOLDER}/img
