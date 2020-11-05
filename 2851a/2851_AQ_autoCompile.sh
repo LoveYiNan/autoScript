@@ -56,4 +56,5 @@ if [ ! -d $IMAGE_FOLDER ] || [ ! -w $IMAGE_FOLDER ]; then
 fi
 cp -rf $VERSION_PATH $IMAGE_FOLDER
 tar -zcvf $IMAGE_FOLDER/2851_AQ_autoCompile_log.tar.gz $SCRIPT_PATH/2851_AQ_autoCompile_log.log
+rm -rf $SCRIPT_PATH/2851_AQ_autoCompile_log.log
 cp -rf $IMAGE_FOLDER $DB_IMAGE_TARGET
